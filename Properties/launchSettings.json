@@ -1,0 +1,13 @@
+
+{
+  "profiles": {
+    "ProjetoCompletoLocadora": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:5147",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+    }
+  }
+}
