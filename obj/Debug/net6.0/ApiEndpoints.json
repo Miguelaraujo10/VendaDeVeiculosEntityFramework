@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "ProjetoCompletoLocadora.AluguelsController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
     "Method": "GetAlugueis",
     "RelativePath": "api/Aluguels",
     "HttpMethod": "GET",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.AluguelsController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
     "Method": "PostAluguel",
     "RelativePath": "api/Aluguels",
     "HttpMethod": "POST",
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.AluguelsController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
     "Method": "GetAluguel",
     "RelativePath": "api/Aluguels/{id}",
     "HttpMethod": "GET",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.AluguelsController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
     "Method": "PutAluguel",
     "RelativePath": "api/Aluguels/{id}",
     "HttpMethod": "PUT",
@@ -93,7 +93,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.AluguelsController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
     "Method": "DeleteAluguel",
     "RelativePath": "api/Aluguels/{id}",
     "HttpMethod": "DELETE",
@@ -109,7 +109,130 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.CategoriasController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
+    "Method": "GetAlugueisPorCliente",
+    "RelativePath": "api/Aluguels/filtro1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Aluguel, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
+    "Method": "GetVeiculosPorPeriodo",
+    "RelativePath": "api/Aluguels/filtro2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dataInicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataFim",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
+    "Method": "GetVeiculosComFabricantes",
+    "RelativePath": "api/Aluguels/filtro3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
+    "Method": "GetAlugueisComClientesEVeiculos",
+    "RelativePath": "api/Aluguels/filtro4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Aluguel, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.AluguelsController",
+    "Method": "GetVeiculosPorCategoria",
+    "RelativePath": "api/Aluguels/filtro5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
     "Method": "GetCategorias",
     "RelativePath": "api/Categorias",
     "HttpMethod": "GET",
@@ -129,7 +252,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.CategoriasController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
     "Method": "PostCategoria",
     "RelativePath": "api/Categorias",
     "HttpMethod": "POST",
@@ -155,7 +278,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.CategoriasController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
     "Method": "GetCategoria",
     "RelativePath": "api/Categorias/{id}",
     "HttpMethod": "GET",
@@ -181,7 +304,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.CategoriasController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
     "Method": "PutCategoria",
     "RelativePath": "api/Categorias/{id}",
     "HttpMethod": "PUT",
@@ -202,7 +325,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.CategoriasController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
     "Method": "DeleteCategoria",
     "RelativePath": "api/Categorias/{id}",
     "HttpMethod": "DELETE",
@@ -218,7 +341,113 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.ClientesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
+    "Method": "GetCategoriasComVeiculos",
+    "RelativePath": "api/Categorias/filtro1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Categoria, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
+    "Method": "GetCategoriasPorNome",
+    "RelativePath": "api/Categorias/filtro2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Categoria, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
+    "Method": "GetCategoriasComQuantidadeDeVeiculos",
+    "RelativePath": "api/Categorias/filtro3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
+    "Method": "GetCategoriasComVeiculosEFabricantes",
+    "RelativePath": "api/Categorias/filtro4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Categoria, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.CategoriasController",
+    "Method": "GetCategoriasSemVeiculos",
+    "RelativePath": "api/Categorias/filtro5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Categoria, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
     "Method": "GetClientes",
     "RelativePath": "api/Clientes",
     "HttpMethod": "GET",
@@ -238,7 +467,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.ClientesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
     "Method": "PostCliente",
     "RelativePath": "api/Clientes",
     "HttpMethod": "POST",
@@ -264,7 +493,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.ClientesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
     "Method": "GetCliente",
     "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "GET",
@@ -290,7 +519,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.ClientesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
     "Method": "PutCliente",
     "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "PUT",
@@ -311,7 +540,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.ClientesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
     "Method": "DeleteCliente",
     "RelativePath": "api/Clientes/{id}",
     "HttpMethod": "DELETE",
@@ -327,7 +556,125 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.FabricantesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
+    "Method": "GetClientesComAlugueisEVeiculos",
+    "RelativePath": "api/Clientes/filtro1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Cliente, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
+    "Method": "GetClientesPorNome",
+    "RelativePath": "api/Clientes/filtro2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Cliente, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
+    "Method": "GetClientesComAlugueisMaiorQue",
+    "RelativePath": "api/Clientes/filtro3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroAlugueis",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Cliente, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
+    "Method": "GetClientesComAlugueisEVeiculosEFabricante",
+    "RelativePath": "api/Clientes/filtro4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Cliente, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.ClientesController",
+    "Method": "GetClientesComAluguelId",
+    "RelativePath": "api/Clientes/filtro5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "aluguelId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Cliente, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
     "Method": "GetFabricantes",
     "RelativePath": "api/Fabricantes",
     "HttpMethod": "GET",
@@ -347,7 +694,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.FabricantesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
     "Method": "PostFabricante",
     "RelativePath": "api/Fabricantes",
     "HttpMethod": "POST",
@@ -373,7 +720,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.FabricantesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
     "Method": "GetFabricante",
     "RelativePath": "api/Fabricantes/{id}",
     "HttpMethod": "GET",
@@ -399,7 +746,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.FabricantesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
     "Method": "PutFabricante",
     "RelativePath": "api/Fabricantes/{id}",
     "HttpMethod": "PUT",
@@ -420,7 +767,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.FabricantesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
     "Method": "DeleteFabricante",
     "RelativePath": "api/Fabricantes/{id}",
     "HttpMethod": "DELETE",
@@ -436,7 +783,119 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.VeiculoesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
+    "Method": "GetFabricantesComVeiculos",
+    "RelativePath": "api/Fabricantes/filtro1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Fabricante, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
+    "Method": "GetFabricantesPorNome",
+    "RelativePath": "api/Fabricantes/filtro2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Fabricante, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
+    "Method": "GetFabricantesComVeiculosMaiorQue",
+    "RelativePath": "api/Fabricantes/filtro3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroVeiculos",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Fabricante, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
+    "Method": "GetFabricantesComVeiculosECategorias",
+    "RelativePath": "api/Fabricantes/filtro4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Fabricante, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.FabricantesController",
+    "Method": "GetFabricantesComVeiculosEAlugueis",
+    "RelativePath": "api/Fabricantes/filtro5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Fabricante, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
     "Method": "GetVeiculos",
     "RelativePath": "api/Veiculoes",
     "HttpMethod": "GET",
@@ -456,7 +915,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.VeiculoesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
     "Method": "PostVeiculo",
     "RelativePath": "api/Veiculoes",
     "HttpMethod": "POST",
@@ -482,7 +941,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.VeiculoesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
     "Method": "GetVeiculo",
     "RelativePath": "api/Veiculoes/{id}",
     "HttpMethod": "GET",
@@ -508,7 +967,7 @@
     ]
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.VeiculoesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
     "Method": "PutVeiculo",
     "RelativePath": "api/Veiculoes/{id}",
     "HttpMethod": "PUT",
@@ -529,7 +988,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ProjetoCompletoLocadora.VeiculoesController",
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
     "Method": "DeleteVeiculo",
     "RelativePath": "api/Veiculoes/{id}",
     "HttpMethod": "DELETE",
@@ -543,5 +1002,129 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
+    "Method": "GetVeiculosComFabricante",
+    "RelativePath": "api/Veiculoes/filtro1",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
+    "Method": "GetVeiculosPorModelo",
+    "RelativePath": "api/Veiculoes/filtro2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
+    "Method": "GetVeiculosPorAno",
+    "RelativePath": "api/Veiculoes/filtro3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ano",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
+    "Method": "GetVeiculosComQuilometragemMaiorQue",
+    "RelativePath": "api/Veiculoes/filtro4",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quilometragem",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjetoCompletoLocadora.Controllers.VeiculoesController",
+    "Method": "GetVeiculosComCategoria",
+    "RelativePath": "api/Veiculoes/filtro5",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoriaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjetoCompletoLocadora.Models.Veiculo, ProjetoCompletoLocadora, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

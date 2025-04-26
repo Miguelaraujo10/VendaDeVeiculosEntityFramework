@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoCompletoLocadora")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47ad841e6910d018d2dbc4828e1c10b3696b4eb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoCompletoLocadora")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoCompletoLocadora")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
